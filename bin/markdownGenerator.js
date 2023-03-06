@@ -1,8 +1,19 @@
 function generateMarkdown(data) {
-    return `# ${data.title}
-  
+    return `
+# ${data.heading}
+
+## 📄 Description
+${data.description}
+
+## ⚙️ Requirements
+${data.requirements}
+
+## 🎮 Usage
+${data.usage}
+
   `;
   }
   
-  module.exports = generateMarkdown;
+
+export default generateMarkdown;
   

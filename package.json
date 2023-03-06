@@ -2,9 +2,16 @@
   "name": "read-me-generator",
   "version": "1.0.0",
   "description": "Create a readme generator",
-  "main": "index.js",
+  "main": "bin/cmd.js",
+  "bin": {
+    "github-readme-generator": "bin/cmd.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/cmd.js",
+    "lint": "eslint bin",
+    "prettier": "prettier \"**/*.{js,md}\"",
+    "prettier:check": "npm run prettier -- --check",
+    "prettier:fix": "npm run prettier -- --write"
   },
   "repository": {
     "type": "git",

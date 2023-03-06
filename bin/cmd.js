@@ -1,9 +1,10 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./");
+const README_FILENAME = 'README.md'
+const generateMarkdown = require('generateMarkdown');
 
-import inquirer from 'inquirer';
+
 inquirer
      .prompt ([
         {
@@ -14,27 +15,24 @@ inquirer
         {
             type:'input',
             message:'in few words describe this project' , 
-            name:'Description' 
+            name:'description' 
+        },
+        {
+            type:'input',
+            message:'in few words describe this project' , 
+            name:'requirements' 
         }
      ])
 
      .then((data) => {
-        fs.writeFile('README.md' , generateMarkdown(data) , (err) => err ? console.log (err) : 
+        fs.writeFile(path.resolve(__dirname, README_FILENAME) , generateMarkdown(data) , (err) => err 
+        ? console.log (err) 
+        : console.log(`Your ${README_FILENAME}has been generated.`)
         )
-     }
+     })
 
-     )
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
 
-}
-
-// function call to initialize program
-init();
 
 
