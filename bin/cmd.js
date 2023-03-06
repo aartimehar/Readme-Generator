@@ -1,35 +1,43 @@
-const fs = require("fs");
+const inquirer = require('inquirer');
+const fs = require('fs');
 const path = require('path');
-const inquirer = require("inquirer");
-const README_FILENAME = 'README.md'
 const generateMarkdown = require('generateMarkdown');
 
+function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+function init () {
+    inquirer
+    .prompt ([
+       {
+           type:'input',
+           message:'README Heading' , 
+           name:'heading' 
+       },
+       {
+           type:'input',
+           message:'in few words describe this project' , 
+           name:'description' 
+       },
+       {
+           type:'input',
+           message:'in few words describe this project' , 
+           name:'requirements' 
+       }
+    ]).then(function(data) {
+        console.log("Generating Markdown ....")
+        writeToFile("README.md" , generateMarkdown({ ...data
+        }));
+    } )
+}
 
-inquirer
-     .prompt ([
-        {
-            type:'input',
-            message:'README Heading' , 
-            name:'heading' 
-        },
-        {
-            type:'input',
-            message:'in few words describe this project' , 
-            name:'description' 
-        },
-        {
-            type:'input',
-            message:'in few words describe this project' , 
-            name:'requirements' 
-        }
-     ])
+init();
 
-     .then((data) => {
-        fs.writeFile(path.resolve(__dirname, README_FILENAME) , generateMarkdown(data) , (err) => err 
-        ? console.log (err) 
-        : console.log(`Your ${README_FILENAME}has been generated.`)
-        )
-     })
+
+
+
+     
+
 
 
 

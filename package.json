@@ -4,7 +4,7 @@
   "description": "Create a readme generator",
   "main": "bin/cmd.js",
   "bin": {
-    "github-readme-generator": "bin/cmd.js"
+    "read-me-generator": "bin/cmd.js"
   },
   "scripts": {
     "start": "node bin/cmd.js",
