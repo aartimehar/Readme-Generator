@@ -1,6 +1,5 @@
-function generateMarkdown(data) {
-    return `# ${data.title}
-    ##### ${data.logo}[${data.userName}](${data.GitHub}) [Email Me](${data.email}) 
+# 
+    ##### []() [Email Me]() 
     
     ## User Story
     ### As a developer, I want a README generator so that I can quickly create a professional README for a new project.
@@ -29,34 +28,31 @@ function generateMarkdown(data) {
   - When a user clicks on the links in the Table of Contents then they are taken to the corresponding section of the README
     
     ## Installation Instructions
-    ${data.installation}
+    
 
     ## Contribution
     
-    ${data.contribution}
+    
     #The following links have helped me with this project.
     * [https://www.npmjs.com/package/inquirer] (##npm inquirer)
     * [https://choosealicense.com/] (##Licence)
     * [https://stackoverflow.com/questions/161738/what-is-the-best-regular-expression-to-check-if-a-string-is-a-valid-url] (##How to validate a URL?)
 
     ## Usage Information
-    ${data.usage}
+    
 
     ## Test Instructions
-    ${data.test}
+    
 
     ## Overview: What We Accomplished!
-    ${data.accomplished}
+    
 
     # Screenshots (Building this application)
     ## Screenshot - 1
-    ${data.screenshot1}
+    
 
     ## Screenshot - 2
-    ${data.screenshot2}
+    
 
     # License
-    ${data.license}`;
-  }
-export default generateMarkdown;
-  
+    APACHE 2.O

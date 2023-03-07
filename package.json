@@ -1,6 +1,7 @@
 {
   "name": "read-me-generator",
   "version": "1.0.0",
+  "type": "module",
   "description": "Create a readme generator",
   "main": "bin/cmd.js",
   "bin": {
