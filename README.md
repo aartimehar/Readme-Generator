@@ -5,17 +5,17 @@
     ### As a developer, I want a README generator so that I can quickly create a professional README for a new project.
 
     ## Table of Contents
-    * [Repository Description](#Repository-Description)
+    * [Repository Description](#Repository)
     * [Installation Instructions](#Install)
     * [Contribution] (#Contribution)
     * [Usage Information](#Usage)
-    * [Test Instructions](#Test Instructions)
+    * [Test Instructions](#Test)
     * [Overview: What We Accomplished!] (#Accomplished!)
     * [Demo I createad] (###Screenshot - 1)
     * [Demo I createad] (###Screenshot - 2)
     * [License] (#Licence)
 
-    <a name="Repository-Description"></a>
+   <a name="Repository"></a>
 ## 1. Repository Description
   - When a user enters the project title then it is displayed as the title of the README
   - When a user enters a description, installation instructions, usage information, contribution guidelines, and test instructions then this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
@@ -42,7 +42,7 @@ Thank you to thr whole team of bootcampspot for organising the front-end develop
 ## 5.Usage
 In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install node.js and npm or yarn package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “ npm i inquirer“ or “yarn add inquirer” to install the dependency inquirer package. Now you are ready to start using the app by entering “node index.js” on your terminal or gitbash.
 
-<a name>="Test Instructions"></a>
+<a name>="Test"></a>
 ## 6.Test Instructions
 Ensure that your application includes the require dependacies, by typing the commnd in your integrated terminal "npm install inquirer".
 
