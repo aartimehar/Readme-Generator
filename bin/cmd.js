@@ -14,6 +14,7 @@ function init () {
         type: "input",
         message: "What is the title of your repository?",
         name: "title"
+        // Readme Generator using Node.js
     },
     {
         type: "input",
@@ -24,6 +25,7 @@ function init () {
         type: "input",
         message: "What is your GitHub user name?",
         name: "userName"
+        // https://github.com/aartimehar
     },
     {
         type: "input",
