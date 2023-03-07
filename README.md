@@ -42,7 +42,7 @@ Thank you to thr whole team of bootcampspot for organising the front-end develop
 ## 5.Usage
 In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install node.js and npm or yarn package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “ npm i inquirer“ or “yarn add inquirer” to install the dependency inquirer package. Now you are ready to start using the app by entering “node index.js” on your terminal or gitbash.
 
-<a name>="Test"></a>
+
 ## 6.Test Instructions
 Ensure that your application includes the require dependacies, by typing the commnd in your integrated terminal "npm install inquirer".
 
